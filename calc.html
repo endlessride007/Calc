@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+
+    <style>
+         .button{
+             width: 40px; height: 30px;
+         }
+        .button0{
+            width: 85px; height: 30px;
+        }
+        .text1{
+            width: 220px; height: 15px;
+        }
+
+    </style>
+    <script src="Calculation.js"></script>
+</head>
+<body>
+         <table border="5" >
+                  <caption>
+                      Calculator
+                  </caption>
+
+          <tr>
+              <td colspan="5"> <p class="text1" id="txtID"></p></td>
+
+          </tr>
+
+             <tr>
+                 <td><button id="i7" class="button" onclick='Display("7")'>7</button></td>
+                 <td><button id="i8" class="button" onclick='Display("8")'>8</button></td>
+                 <td><button id="i9" class="button" onclick='Display("9")'>9</button></td>
+                 <td><button class="button" onclick="divideCal()">1/x</button></td>
+                 <td><button class="button" onclick='Display("/")'>/</button></td>
+             </tr>
+
+
+             <tr>
+                 <td><button class="button" onclick='Display("4")'>4</button></td>
+                 <td><button class="button" onclick='Display("5")'>5</button></td>
+                 <td><button class="button" onclick='Display("6")'>6</button></td>
+                 <td><button class="button" onclick='Display("*")'>*</button></td>
+                 <td><button class="button" onclick='back()'>C</button></td>
+             </tr>
+
+             <tr>
+                 <td><button class="button" onclick='Display("1")'>1</button></td>
+                 <td><button class="button" onclick='Display("2")'>2</button></td>
+                 <td><button class="button" onclick='Display("3")'>3</button></td>
+                 <td><button class="button" onclick='Display("-")'>-</button></td>
+                 <td><button class="button" onclick='clearScreen()'>CE</button></td>
+             </tr>
+
+
+             <tr>
+                 <td colspan="2"><button class="button0" onclick='Display("0")'>0</button></td>
+                 <td><button class="button" onclick='Display(".")'>.</button></td>
+                 <td><button class="button" onclick='Display("+")'>+</button></td>
+                 <td><button class="button" onclick='calculate()'>=</button></td>
+
+             </tr>
+
+
+         </table>
+</body>
+</html>
